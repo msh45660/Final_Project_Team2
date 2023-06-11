@@ -39,8 +39,8 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 ### 3.프로젝트 설계
 
 #### ERD 설계
-<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/0e83701e-efd3-41c1-8e94-0cab00df1fc2">
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/f42e90ed-e46e-476b-991e-054ff4246e79">
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/0e83701e-efd3-41c1-8e94-0cab00df1fc2">
 
 #### 요구사항 명세서
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/c44cd153-8100-44ce-9d8d-68641dd571f7">
@@ -63,6 +63,7 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 삭제 기능은 별도의 폼없이 삭제가 이루어집니다 <br>
 <details>
     <summary>코드확인</summary>
+	
 ````
 	자유 게시판 삭제
 	@GetMapping(value = "/freedelete")
