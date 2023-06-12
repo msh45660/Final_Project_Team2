@@ -113,6 +113,8 @@ public String freedeleteGET(int bno,RedirectAttributes rttr,HttpSession session)
 	
 ````	
  경제 게시판 삭제
+	
+컨트롤러
 @GetMapping(value = "/economydelete")
 public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession session) throws Exception {
 			
@@ -123,8 +125,25 @@ public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession sessi
 	return "redirect:/economy?page=1";
 }
 
-서비스와 임플리먼트에서 삭제기능을 통해 별다른 삭제페이지 없이 삭제가 완료되도록 했습니다.
-	
+서비스
+public void deleteBoard(Integer bno) throws Exception;
+
+임플리먼트
+@Override
+public void deleteBoard(Integer bno) throws Exception {
+	mylog.debug(" deleteBoard() 호출 ");
+		
+	dao.deleteBoard(bno);
+		
+}	
+
+매퍼
+<delete id="deleteBoard">
+	delete from board
+	where bno = #{bno}
+</delete>
+
+bno를 통해 글을 삭제하는 로직입니다.
 ````
 </details>
 
