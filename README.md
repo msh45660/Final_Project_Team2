@@ -147,6 +147,12 @@ bno를 통해 글을 삭제하는 로직입니다.
 ````
 </details>
 
+#### 4-1-3 공지사항 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/notice.jsp)
+
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/b66e0aa5-75d3-4e30-95d3-5fe985e562c2">
+공지사항입니다. 일반적인 CRUD.<br>
+
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/3a4c361f-f5e9-4d69-983f-b2e3898d8356">
 
 ### 4-2 네이버 검색 API
 
