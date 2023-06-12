@@ -103,7 +103,8 @@ public String freedeleteGET(int bno,RedirectAttributes rttr,HttpSession session)
 
 <br>
 또한, 관리자 또한 임의로 글을 삭제하거나 수정을 할 수 있습니다.<br>
-글 수정 시 별도의 폼을 통해 수정을 할 수 있으며, 삭제는 클릭시 삭제가 완료됩니다. [수정 코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
+<img src="(https://github.com/msh45660/Final_Project_Team2/assets/116853287/67bcdaa0-7d46-4415-bcaf-238ec7065b0a">
+글 수정 시 별도의 폼을 통해 수정을 할 수 있으며, 삭제는 클릭시 삭제가 완료됩니다. [수정 코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economyupdate.jsp)
 
 <details>
     <summary>삭제 코드확인</summary>
@@ -121,11 +122,9 @@ public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession sessi
 }
 
 서비스와 임플리먼트에서 삭제기능을 통해 별다른 삭제페이지 없이 삭제가 완료되도록 했습니다.
+	
 ````
 </details>
-
-<img src="(https://github.com/msh45660/Final_Project_Team2/assets/116853287/67bcdaa0-7d46-4415-bcaf-238ec7065b0a">
-
 
 
 ### 4-2 네이버 검색 API
