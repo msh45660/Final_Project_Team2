@@ -68,6 +68,7 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 자유게시판의 경우 날짜별 타임라인 형식으로 글이 개제됩니다.<br><br>
 
 수정은 별도의 폼을 통해 수정이 이루어집니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboardupdate.jsp)<br>
+세션 ID와 작성한 글의 ID와 일치할 시 수정 및 삭제 기능을 이용할 수 있습니다.<br>
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/1484a700-2540-4d9a-84bf-fc5244b9de84">
 삭제 기능은 별도의 폼없이 삭제가 이루어집니다 <br><br>
