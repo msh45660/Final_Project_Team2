@@ -63,9 +63,11 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 <br>
 
 #### 4-1-1 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
-자유게시판의 경우 날짜별 타임라인 형식으로 글이 개제됩니다.<br>
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/57581691-4965-4fa5-a693-8a690f9fed44">
+자유게시판의 경우 날짜별 타임라인 형식으로 글이 개제됩니다.<br><br>
 수정은 별도의 폼을 통해 수정이 이루어집니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboardupdate.jsp)<br>
-삭제 기능은 별도의 폼없이 삭제가 이루어집니다 <br>
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/304d53f7-3564-4538-9524-b7ac155cdcac">
+삭제 기능은 별도의 폼없이 삭제가 이루어집니다 <br><br>
 <details>
     <summary>삭제 코드확인</summary>
 	
