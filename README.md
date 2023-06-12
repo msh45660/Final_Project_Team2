@@ -77,23 +77,57 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 	
 ````
 	자유 게시판 삭제
-	@GetMapping(value = "/freedelete")
-	public String freedeleteGET(int bno,RedirectAttributes rttr,HttpSession session) throws Exception {
+@GetMapping(value = "/freedelete")
+public String freedeleteGET(int bno,RedirectAttributes rttr,HttpSession session) throws Exception {
 		
-		Bservice.deleteBoard(bno);
+	Bservice.deleteBoard(bno);
 				
-		rttr.addFlashAttribute("result", "delOK");
+	rttr.addFlashAttribute("result", "delOK");
 				
-		return "redirect:/freeboard";
-	}
+	return "redirect:/freeboard";
+}
 
 ````
 </details>
+<br><br>
 
 #### 4-1-2 경제 게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economy.jsp)
-경제게시판은 
 
-### 4-2 네이버 검색 API를 통한 경제 뉴스
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/a52ed6e9-1a41-4790-b525-88e91b3ba4a9">
+경제게시판은 API를 통한 '경제' 관련 뉴스를 검색하여 제목링크를 출력한 부분과<br>
+경제 관련 글을 작성하는 게시판 부분으로 이루어져 있습니다.<br>
+제목 클릭시 제목에 링크되어 있는 기사가 적힌 사이트로 넘어갑니다.<br>
+<br><br><br>
+
+경제 게시판 글 내용에서 세션ID와 작성자 ID가 동일할 시 수정 및 삭제 기능을 이용할 수 있습니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
+
+<br>
+또한, 관리자 또한 임의로 글을 삭제하거나 수정을 할 수 있습니다.<br>
+글 수정 시 별도의 폼을 통해 수정을 할 수 있으며, 삭제는 클릭시 삭제가 완료됩니다. [수정 코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
+<details>
+    <summary>삭제 코드확인</summary>
+	
+````	
+ 경제 게시판 삭제
+@GetMapping(value = "/economydelete")
+public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession session) throws Exception {
+			
+	Bservice.deleteBoard(bno);
+					
+	rttr.addFlashAttribute("result", "delOK");
+					
+	return "redirect:/economy?page=1";
+}
+<br>
+서비스와 임플리먼트에서 삭제기능을 통해 별다른 삭제페이지 없이 삭제가 완료되도록 했습니다.
+````
+</details>
+
+<img src="(https://github.com/msh45660/Final_Project_Team2/assets/116853287/67bcdaa0-7d46-4415-bcaf-238ec7065b0a">
+
+
+
+### 4-2 네이버 검색 API
 
 ### 4-3 댓글
 
