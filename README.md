@@ -87,6 +87,27 @@ public String freedeleteGET(int bno,RedirectAttributes rttr,HttpSession session)
 	return "redirect:/freeboard";
 }
 
+서비스
+public void deleteBoard(Integer bno) throws Exception;
+
+임플리먼트
+@Override
+public void deleteBoard(Integer bno) throws Exception {
+	mylog.debug(" deleteBoard() 호출 ");
+		
+	dao.deleteBoard(bno);
+		
+}	
+
+매퍼
+<delete id="deleteBoard">
+	delete from board
+	where bno = #{bno}
+</delete>
+
+글의 bno를 통해 해당글을 삭제하는 로직입니다.
+
+
 ````
 </details>
 <br><br>
@@ -125,34 +146,50 @@ public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession sessi
 	return "redirect:/economy?page=1";
 }
 
-서비스
-public void deleteBoard(Integer bno) throws Exception;
+서비스와 임플리먼트, 매퍼는 같은 로직을 사용했습니다.
 
-임플리먼트
-@Override
-public void deleteBoard(Integer bno) throws Exception {
-	mylog.debug(" deleteBoard() 호출 ");
-		
-	dao.deleteBoard(bno);
-		
-}	
-
-매퍼
-<delete id="deleteBoard">
-	delete from board
-	where bno = #{bno}
-</delete>
-
-bno를 통해 글을 삭제하는 로직입니다.
 ````
 </details>
 
 #### 4-1-3 공지사항 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/notice.jsp)
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/b66e0aa5-75d3-4e30-95d3-5fe985e562c2">
-공지사항입니다. 일반적인 CRUD.<br>
+공지사항입니다. 일반적인 CRUD 기능을 사용했습니다.<br>
+<br>
 
+공지사항 상세 페이지 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/noticecontent.jsp)
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/3a4c361f-f5e9-4d69-983f-b2e3898d8356">
+기본적인 상세글보기 페이지입니다.<br>
+세션ID와 글 작성자 ID를 비교하여 관리자일 경우에만 수정,삭제 기능이 보이도록 제어했습니다.<br>
+
+수정[코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/noticeupdate.jsp)
+삭제
+<details>
+    <summary>삭제 코드확인</summary>
+
+```` 
+@PostMapping(value = "/noticedelete")
+public String noticedeleteGET(int bno,RedirectAttributes rttr,HttpSession session) throws Exception {
+			
+	Bservice.deleteBoard(bno);
+					
+	rttr.addFlashAttribute("result", "delOK");
+					
+	return "redirect:/notice?page=1";
+}
+
+자유,경제 게시판과 같이 같은 코드를 사용합니다.
+
+````
+</details>
+
+
+### 4-1-4 내가 쓴 글[코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/myBoardWrite.jsp)
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/97da4f16-4455-48d3-9adc-d2dc6fa71055">
+내가 쓴 글을 모아두는 페이지입니다.<br>
+게시판 종류와 수정,삭제 유무를 선택할 수 있습니다.<br>
+또한, 수정과 삭제 기능을 마이페이지에서 수행 할 수 있습니다.<br>
+
 
 ### 4-2 네이버 검색 API
 
