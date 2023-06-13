@@ -184,12 +184,11 @@ public String noticedeleteGET(int bno,RedirectAttributes rttr,HttpSession sessio
 </details>
 
 
-### 4-1-4 내가 쓴 글[코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/myBoardWrite.jsp)
+### 4-1-4 내가 쓴 글 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/myBoardWrite.jsp)
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/97da4f16-4455-48d3-9adc-d2dc6fa71055">
 내가 쓴 글을 모아두는 페이지입니다.<br>
 게시판 종류와 수정,삭제 유무를 선택할 수 있습니다.<br>
 또한, 수정과 삭제 기능을 마이페이지에서 수행 할 수 있습니다.<br>
-
 
 ### 4-2 네이버 검색 API
 
