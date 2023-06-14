@@ -59,7 +59,10 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 2. 네이버 검색 API를 통한 경제 관련 뉴스 링크 출력
 3. 댓글
 
-### 4-1 커뮤니티 CURD 기능 
+### 4-1 커뮤니티 CURD 기능 <br>
+공지사항,자유게시판,뉴스·재테크 게시판(경제),후기게시판 및 커뮤니티 메인 페이지를 설계했습니다.<br>
+각 게시판은 DB의 한 테이블에 같이 관리하며 각 게시판마다 sort 값을 통해 각 커뮤니티에 해당하는 글을 분류했습니다.<br>
+
 <br>
 
 #### 4-1-1 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
@@ -121,7 +124,7 @@ public void deleteBoard(Integer bno) throws Exception {
 <br><br><br>
 
 경제 게시판 글 내용에서 세션ID와 작성자 ID가 동일할 시 수정 및 삭제 기능을 이용할 수 있습니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
-
+ 
 <br>
 또한, 관리자 또한 임의로 글을 삭제하거나 수정을 할 수 있습니다.<br>
 <img src="(https://github.com/msh45660/Final_Project_Team2/assets/116853287/67bcdaa0-7d46-4415-bcaf-238ec7065b0a">
