@@ -170,8 +170,8 @@ public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession sessi
 기본적인 상세글보기 페이지입니다.<br>
 세션ID와 글 작성자 ID를 비교하여 관리자일 경우에만 수정,삭제 기능이 보이도록 제어했습니다.<br>
 
-수정[코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/noticeupdate.jsp)
-삭제
+수정 [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/noticeupdate.jsp)
+
 <details>
     <summary>삭제 코드확인</summary>
 
