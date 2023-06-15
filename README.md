@@ -203,8 +203,12 @@ public String noticedeleteGET(int bno,RedirectAttributes rttr,HttpSession sessio
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/fc65d627-92e5-4892-b7d2-c7a1e7e43680">
 네이버 검색 API 를 이용하여 "경제" 단어를 검색하여 해당 내용의 기사만 출력합니다.<br>
+또한, 최신순으로 검색하여 보여줍니다.<br>
 기사 클릭시 해당 네이버 기사 페이지로 자동 이동합니다.<br>
 
+<details>
+    <summary>검색 API 적용 페이지 코드</summary>
+	
 ````
 <table class="table table-hover" style="margin-left:10px; margin-right:10px; border-bottom: 1px solid #ddd;border-top: 2px solid #66BB7A;">
 			  <thead style="background-color: #dddddd30;font-size: 16px;">
@@ -262,6 +266,7 @@ public String noticedeleteGET(int bno,RedirectAttributes rttr,HttpSession sessio
 </script>	
 ````
 
-### 4-3 댓글
+</details>
+
 
 
