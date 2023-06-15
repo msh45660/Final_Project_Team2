@@ -63,6 +63,11 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 공지사항,자유게시판,뉴스·재테크 게시판(경제),후기게시판 및 커뮤니티 메인 페이지를 설계했습니다.<br>
 각 게시판은 DB의 한 테이블에 같이 관리하며 각 게시판마다 sort 값을 통해 각 커뮤니티에 해당하는 글을 분류했습니다.<br>
 
+#### 커뮤니티 메인 페이지 [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/boardMain.jsp)
+
+<br>
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/02281c2d-f0d9-42c3-bbd6-bec5c38439e2">
+커뮤니티 메인 페이지에서 모든 게시판의 최신글 5개를 확인할 수 있으며, 더보기를 통해 해당 게시판으로 갈 수 있게 설계했습니다.
 <br>
 
 #### 4-1-1 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
@@ -188,12 +193,74 @@ public String noticedeleteGET(int bno,RedirectAttributes rttr,HttpSession sessio
 
 
 ### 4-1-4 내가 쓴 글 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/myBoardWrite.jsp)
-<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/97da4f16-4455-48d3-9adc-d2dc6fa71055">
+
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/78e83e1a-4aae-4956-a559-be3b1e77fdc3">
 내가 쓴 글을 모아두는 페이지입니다.<br>
 게시판 종류와 수정,삭제 유무를 선택할 수 있습니다.<br>
 또한, 수정과 삭제 기능을 마이페이지에서 수행 할 수 있습니다.<br>
 
-### 4-2 네이버 검색 API
+### 4-2 네이버 검색 API [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/java/com/chagok/controller/NewsAPIController.java)
+
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/fc65d627-92e5-4892-b7d2-c7a1e7e43680">
+네이버 검색 API 를 이용하여 "경제" 단어를 검색하여 해당 내용의 기사만 출력합니다.<br>
+기사 클릭시 해당 네이버 기사 페이지로 자동 이동합니다.<br>
+
+````
+<table class="table table-hover" style="margin-left:10px; margin-right:10px; border-bottom: 1px solid #ddd;border-top: 2px solid #66BB7A;">
+			  <thead style="background-color: #dddddd30;font-size: 16px;">
+			    <tr>
+			      <th scope="col" style="width:300px; padding: 15px 0;">경제 뉴스 기사</th>
+			    </tr>
+			  </thead>
+			<tbody>
+				  <tr>
+				  	<td style="text-align:center; padding: 15px 0;">
+					   <a href="#" id="news_test"></a>
+						<div id="result"></div>
+					</td>
+				  </tr>
+				
+			</tbody>
+	</table>
+
+해당 코드를 통해 javascript 를 호출합니다.
+호출한 스크립트는 아래와 같습니다.
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var query = { "query":"경제" };
+		
+		$.ajax({
+			type: 'get',
+			url: '/news',
+			contentType: "application/json; charset=UTF-8",
+			dataType: 'text',
+// 			data: JSON.stringify(query),
+			success: function(data){
+// 			alert("ajax 성공!");
+			var job = JSON.parse(data);
+			console.log(job);
+			
+			$('#result').empty();
+			
+			$.each(job, function(index, item){
+				
+				$('#result').append("<a href="+item.link+">"+item.title+"</a><br><br>");
+				$('#result').append(item.description+"<br>");
+				$('#result').append(item.pubDate+"<br>");
+				$('#result').append("<hr>");
+			});
+			
+		}, error: function(data){
+			console.log("ajax 실패!");
+			console.log(data);
+		}
+	});
+		
+	});
+
+</script>	
+````
 
 ### 4-3 댓글
 
