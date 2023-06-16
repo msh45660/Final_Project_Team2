@@ -70,7 +70,11 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 커뮤니티 메인 페이지에서 모든 게시판의 최신글 5개를 확인할 수 있으며, 더보기를 통해 해당 게시판으로 갈 수 있게 설계했습니다.
 <br>
 
-#### 4-1-1 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
+#### 4-1-1 후기게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewboard.jsp)
+
+
+
+#### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/57581691-4965-4fa5-a693-8a690f9fed44">
 자유게시판의 경우 날짜별 타임라인 형식으로 글이 개제됩니다.<br><br>
@@ -120,7 +124,7 @@ public void deleteBoard(Integer bno) throws Exception {
 </details>
 <br><br>
 
-#### 4-1-2 경제 게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economy.jsp)
+#### 4-1-3 경제 게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economy.jsp)
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/a52ed6e9-1a41-4790-b525-88e91b3ba4a9">
 경제게시판은 API를 통한 '경제' 관련 뉴스를 검색하여 제목링크를 출력한 부분과<br>
@@ -159,7 +163,7 @@ public String economydeleteGET(int bno,RedirectAttributes rttr,HttpSession sessi
 ````
 </details>
 
-#### 4-1-3 공지사항 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/notice.jsp)
+#### 4-1-4 공지사항 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/notice.jsp)
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/b66e0aa5-75d3-4e30-95d3-5fe985e562c2">
 공지사항입니다. 일반적인 CRUD 기능을 사용했습니다.<br>
