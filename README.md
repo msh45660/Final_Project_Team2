@@ -72,7 +72,9 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 
 #### 4-1-1 후기게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewboard.jsp)
 
-
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/b41e4d7b-15d4-44c6-8499-b7278d965324">
+커뮤니티의 메인인 챌린지에 대해 후기를 남길 수 있는 게시판입니다.<br>
+챌린지가 끝난 후 결과 창에서도 후기를 남길 수 있으며, 
 
 #### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
