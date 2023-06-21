@@ -74,7 +74,15 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/b41e4d7b-15d4-44c6-8499-b7278d965324">
 커뮤니티의 메인인 챌린지에 대해 후기를 남길 수 있는 게시판입니다.<br>
-챌린지가 끝난 후 결과 창에서도 후기를 남길 수 있으며, 
+챌린지가 끝난 후 결과 창에서도 후기를 남길 수 있으며,<br>
+<br>
+<br>
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/07cf0c4a-c317-4819-9b70-6b40c0b5806a">
+후기 게시판에서 후기글 작성 클릭 시, 위 사진과 같이 참여한 챌린지 페이지로 넘어갑니다.<br>
+원하는 챌린지를 선택하여 후기를 작성할 수 있습니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/review.jsp) <br>
+
+<br>
+후기글 상세페이지에서
 
 #### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
