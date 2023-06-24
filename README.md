@@ -79,7 +79,14 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 <br>
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/07cf0c4a-c317-4819-9b70-6b40c0b5806a">
 후기 게시판에서 후기글 작성 클릭 시, 위 사진과 같이 참여한 챌린지 페이지로 넘어갑니다.<br>
-원하는 챌린지를 선택하여 후기를 작성할 수 있습니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/review.jsp) <br>
+원하는 챌린지를 선택하여 후기를 작성할 수 있습니다. <br>
+````
+<button type="button" class="btn" style="background-color:#dd4b39;"
+		onclick="location.href='/review?cno=${vo.cno}';">
+		후기 쓰기
+</button>
+
+````
 
 <br>
 후기글 상세페이지에서
