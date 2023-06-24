@@ -84,7 +84,7 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 
 <br>
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/d87e3984-2812-4ef7-8bb9-7c84d9b7421c">
-후기글 작성 후 상세게시글에서는 해당 챌린지에 대한 정보도 출력됩니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewcontent.jsp) <br>
+후기글 작성 후 상세게시글에서는 해당 챌린지에 대한 정보도 출력됩니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewcontent.jsp)<br>
 
 #### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
