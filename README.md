@@ -63,7 +63,7 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 공지사항,자유게시판,뉴스·재테크 게시판(경제),후기게시판 및 커뮤니티 메인 페이지를 설계했습니다.<br>
 각 게시판은 DB의 한 테이블에 같이 관리하며 각 게시판마다 sort 값을 통해 각 커뮤니티에 해당하는 글을 분류했습니다.<br>
 
-#### 커뮤니티 메인 페이지 [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/boardMain.jsp)
+#### 커뮤니티 메인 페이지 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/chagok/boardMain.jsp)
 
 <br>
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/02281c2d-f0d9-42c3-bbd6-bec5c38439e2">
@@ -84,7 +84,7 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 
 <br>
 <img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/d87e3984-2812-4ef7-8bb9-7c84d9b7421c">
-후기글 작성 후 상세게시글에서는 해당 챌린지에 대한 정보도 출력됩니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewcontent.jsp) <br>
+후기글 작성 후 상세게시글에서는 해당 챌린지에 대한 정보도 출력됩니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewcontent.jsp) <br>
 
 #### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
@@ -144,13 +144,13 @@ public void deleteBoard(Integer bno) throws Exception {
 제목 클릭시 제목에 링크되어 있는 기사가 적힌 사이트로 넘어갑니다.<br>
 <br><br><br>
 
-경제 게시판 글 내용에서 세션ID와 작성자 ID가 동일할 시 수정 및 삭제 기능을 이용할 수 있습니다. [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
+경제 게시판 글 내용에서 세션ID와 작성자 ID가 동일할 시 수정 및 삭제 기능을 이용할 수 있습니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economycontent.jsp)
  
 <br>
 또한, 관리자 또한 임의로 글을 삭제하거나 수정을 할 수 있습니다.<br>
 <img src="(https://github.com/msh45660/Final_Project_Team2/assets/116853287/67bcdaa0-7d46-4415-bcaf-238ec7065b0a">
 
-글 수정 시 별도의 폼을 통해 수정을 할 수 있으며, [코드보기](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economyupdate.jsp)<br>
+글 수정 시 별도의 폼을 통해 수정을 할 수 있으며, [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/economyupdate.jsp)<br>
 
 삭제는 클릭시 삭제가 완료됩니다.
 <details>
