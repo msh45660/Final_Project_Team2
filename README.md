@@ -87,6 +87,14 @@ Javascript / HTML5 / CSS3 / AJAX / Jquery <br>
 
 후기글 작성 후 상세게시글에서는 해당 챌린지에 대한 정보도 출력됩니다. [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/reviewcontent.jsp)<br>
 
+<br>
+세션 ID와 작성한 글의 ID와 일치할 시 수정 및 삭제 기능을 이용할 수 있습니다.<br>
+<img src="https://github.com/msh45660/Final_Project_Team2/assets/116853287/1d69f2d0-b1c3-4feb-b83e-42bdf82fe0d1">
+<br>
+
+수정은 별도의 폼을 통해 수정이 가능하며, 삭제 또한 별도의 폼 없이 즉시 삭제가 완료됩니다.<br>
+<br>
+
 
 #### 4-1-2 자유게시판 [코드확인](https://github.com/msh45660/Final_Project_Team2/blob/master/Chagok/src/main/webapp/WEB-INF/views/community/freeboard.jsp)
 
